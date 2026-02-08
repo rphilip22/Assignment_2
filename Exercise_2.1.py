@@ -1,19 +1,19 @@
 amount = float(input("Enter purchase amount: "))
 membership = input("Are you a member? (yes/no): ").strip().lower()
-if amount < 0: 
-    print("Invalid amount")
 
+if amount < 0:
+    print("Invalid amount")
 else:
+    discount_per = 0.0
+
     if membership == 'yes':
-        if amount < 100:
-            discount_per = 0.05
-        else:
+        if amount >= 100:
             discount_per = 0.15
+        else:
+            discount_per = 0.05
     else:
         if amount >= 150:
-            discount_per = 0.1
-        else:
-            discount_per = 0.00
+            discount_per = 0.10
 
     final_amount = amount * (1 - discount_per)
     print("Discount applied: " + str(discount_per * 100) + "%")

@@ -12,4 +12,4 @@ else:
     else:
         risk = "High"
 
-    print("Risk Level Category: " + risk + " Risk")
+    print("Loan Level Category: " + risk + " Risk")
