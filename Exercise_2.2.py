@@ -1,8 +1,8 @@
 salary = float(input("Enter annual salary: ")) # Get the annual salary from the user
 per_score = int(input("Enter performance score (0-100): ")) # Get the performance score from the user
 
-if per_score < 0 or per_score > 100:
-    print("Invalid performance score") # Check if the performance score is valid
+if salary < 0 or per_score < 0 or per_score > 100:
+    print("Invalid input values") # Check if the inputs are valid
 
 # Calculate the performance bonus based on the performance score
 else:
